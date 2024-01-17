@@ -1,0 +1,14 @@
+{
+    "nombre": "Roger Sancho",
+    "nick": "RSMKode",
+    "imagen":{
+        "logo":{
+        "src":"https://avatars.githubusercontent.com/u/116068243?v=4",
+        "alt":"Logo RSMKode"
+        }
+    },
+    "links":{
+        "linkedin":{"nombre":"LinkedIn","link":"https://linkedin.com/in/roger-sancho"},
+        "github":{"nombre":"GitHub","link":"https://github.com/RSMKode"}
+    }
+}

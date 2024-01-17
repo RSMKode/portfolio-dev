@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import datos from "../data/datos.json";
+
+const disponibilidadTrabajo = true;
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="pt-20 px-12 flex gap-6 flex-column justify-center max-w-5xl">
+    <section class="flex flex-col gap-4 w-fit max-w-2xl">
+      <img
+        class="rounded-full h-24 w-24 self-start"
+        src={datos.imagen.logo.src}
+        alt={datos.imagen.logo.alt}
+      />
+      <div class="heading flex flex-wrap gap-2 items-end">
+        <h1
+          class="text-white text-5xl text-balance font-bold flex flex-wrap gap-2"
+        >
+          Hola, soy {datos.nombre}
+        </h1>
+        <h2 class="gap-2 text-4xl opacity-95 flex flex-wrap items-center">
+          {datos.nick}
+          <a
+            href={datos.links.linkedin.link}
+            target="blank"
+            rel="noopener"
+            class=""
+          >
+            {disponibilidadTrabajo && <Badge>Dispoible para trabajar</Badge>}</a
+          >
+        </h2>
+      </div>
+      <h3 class="text-2xl opacity-80 pt-4">
+        Desarrollador Web. De Valencia, España. Apasionado del frontend y el
+        diseño UX/UI.
+      </h3>
+    </section>
+  </main>
+</Layout>
