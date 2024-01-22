@@ -1,0 +1,14 @@
+---
+const { nombre, link, icono } = Astro.props;
+---
+
+<a
+  class="flex justify-center text-white font-medium bg-rose-900 px-2 py-1 rounded-lg gap-2 hover:scale-[1.05] active:scale-[1] transition-transform duration-300"
+  href={link}
+  target="_blank"
+  rel="noreferrer"
+  title={nombre}
+>
+  <img src={icono} alt={"Icono " + nombre} />
+  <span class="text-sm hidden sm:flex">{nombre}</span>
+</a>

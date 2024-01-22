@@ -1,0 +1,17 @@
+---
+// interface Props {
+//   imageURL: string;
+//   backgroundOpacity: number;
+// }
+
+// const { imageURL, backgroundOpacity } = Astro.props;
+const propsClass = Astro.props.class ?? "";
+console.log(propsClass);
+---
+
+<div
+  class={"flex flex-col overflow-hidden relative min-w-8 min-h-8 rounded-3xl p-6 lg:p-10 " +
+    propsClass}
+>
+  <slot />
+</div>

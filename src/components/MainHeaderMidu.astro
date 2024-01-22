@@ -1,0 +1,41 @@
+---
+import datos from "../data/datos.json";
+
+import Badge from "./Badge.astro";
+
+const disponibilidadTrabajo = true;
+---
+
+<header class="flex flex-col gap-4 w-fit max-w-2xl">
+  <img
+    class="rounded-full h-24 w-24 self-start"
+    src={datos.imagenes.logo.src}
+    alt={datos.imagenes.logo.alt}
+  />
+  <div class="heading flex flex-wrap gap-2 items-end">
+    <h1 class="text-white text-5xl text-balance font-bold flex flex-wrap gap-2">
+      Hola, soy {datos.nombre}
+    </h1>
+    <h2 class="gap-2 text-4xl opacity-95 flex flex-wrap items-center">
+      {datos.nick}
+      <a
+        href={datos.links.linkedin.link}
+        target="blank"
+        rel="noopener"
+        class=""
+      >
+        <Badge
+          class={datos.disponibilidad.disponible
+            ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
+            : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300"}
+        >
+          {datos.disponibilidad.texto}
+        </Badge>
+      </a>
+    </h2>
+  </div>
+  <h3 class="text-2xl opacity-80 pt-4">
+    Desarrollador Web. De Valencia, España. Apasionado del frontend y el diseño
+    UX/UI.
+  </h3>
+</header>

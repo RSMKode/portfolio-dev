@@ -3,12 +3,19 @@ import datos from "../data/datos.json";
 ---
 
 <header
-  class="flex justify-center items-center py-3 w-full md:w-10/12 lg:w-8/12"
+  class="px- w-full h-[5rem] flex justify-center items-center bg-opacity-70 dark:bg-opacity-70 sticky top-0 left-0 z-10 backdrop-blur-lg"
 >
-  <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contacto</a>
-  </nav>
+  <div
+    class="flex justify-between max-w-5xl xl:max-w-7xl flex-grow px-12 items-center"
+  >
+    <h1 class="w-1/2 text-2xl lg:text-4xl font-bold">{datos.nick}</h1>
+    <nav
+      class="w-full h-full flex items-center justify-between max-w-5xl xl:max-w-7xl"
+    >
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contacto</a>
+    </nav>
+  </div>
 </header>

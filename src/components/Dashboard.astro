@@ -1,0 +1,82 @@
+---
+import datos from "../data/datos.json";
+
+import Badge from "./Badge.astro";
+import Box from "./Box.astro";
+import SocialNav from "./SocialNav.astro";
+---
+
+<header class="w-full grid auto-rows-[11rem] grid-cols-6 gap-4">
+  <Box class={"row-span-2 col-span-6 xl:col-span-4"}>
+    <div
+      class="absolute bg-gradient-to-t from-neutral-900 to-transparent inset-0 z-[1]"
+    >
+    </div>
+    <img
+      class="absolute w-full h-full object-cover left-0 top-0"
+      src={datos.imagenes.foto.src}
+      alt={datos.imagenes.foto.alt}
+      title={datos.imagenes.foto.alt}
+    />
+    <article
+      class="w-full flex flex-col gap-2 z-[2] absolute left-0 bottom-0 leading-4 p-5"
+    >
+      <h2 class="flex flex-wrap gap-2 items-end text-3xl lg:text-4xl font-bold">
+        {datos.nombre}
+      </h2>
+      <h3
+        class="flex flex-wrap gap-2 items-center ltext-lg lg:text-xl font-medium"
+      >
+        {datos.puesto}
+      </h3>
+      <Badge
+        class={datos.disponibilidad.disponible
+          ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
+          : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300"}
+      >
+        {datos.disponibilidad.texto}
+      </Badge>
+      <SocialNav />
+    </article>
+  </Box>
+
+  <Box class={"row-span-1 col-span-3 dark: xl:col-span-2 gap-4 bg-rose-900"}>
+    <h2 class="text-2xl font-bold">Sobre mi</h2>
+    <p class="w-full opacity-80">
+      {datos.about}
+    </p>
+  </Box>
+
+  <Box
+    class="row-span-1 col-span-3 xl:col-span-1 flex items-center justify-center"
+  >
+    <img
+      class="absolute w-full h-full object-cover"
+      src={datos.from.src}
+      alt="Location"
+      title="Location"
+    />
+    <div
+      class="animated w-24 h-24 bg-[#c24444] absolute z-[1] rounded-full bg-opacity-30 border-2 border-white"
+    >
+    </div>
+    <footer
+      class="w-full h-10 backdrop-blur-sm absolute left-0 bottom-0 z-[1] flex items-center justify-center text-left text-opacity-70"
+      style="opacity: 1;"
+    >
+      <span class="text-xs font-medium">{datos.from.text}</span>
+    </footer>
+  </Box>
+</header>
+<style>
+  .animated {
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+</style>
