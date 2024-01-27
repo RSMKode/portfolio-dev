@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 const { nombre, link, icono } = Astro.props;
 ---
 
@@ -9,6 +11,6 @@ const { nombre, link, icono } = Astro.props;
   rel="noreferrer"
   title={nombre}
 >
-  <img src={icono} alt={"Icono " + nombre} />
+  <Icon name={icono} height={20} width={20} class="fill-white" />
   <span class="text-sm hidden sm:flex">{nombre}</span>
 </a>

@@ -26,17 +26,17 @@
             "linkedin": {
                 "nombre": "LinkedIn",
                 "link": "https://linkedin.com/in/roger-sancho",
-                "icono": "/assets/icons/linkedin.svg"
+                "icono": "linkedin"
             },
             "github": {
                 "nombre": "GitHub",
                 "link": "https://github.com/RSMKode",
-                "icono": "/assets/icons/github.svg"
+                "icono": "github"
             },
             "email": {
                 "nombre": "rogersanchom@gmail.com",
                 "link": "mailto:rogersanchom@gmail.com",
-                "icono": "/assets/icons/email.svg"
+                "icono": "email"
             }
         }
     },

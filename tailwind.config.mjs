@@ -6,12 +6,13 @@ export default {
     extend: {
       colors: {
         accent: {
-          1: "hsl(001 80% 60%)",
-          2: "hsl(100 90% 80%)",
+          1: "hsl(var(--color-accent-1) / <alpha-value>)",
+          2: "hsl(var(--color-accent-2) / <alpha-value>)",
         },
-        bkg: "hsl(210 40% 98%)",
-        content: "hsl(217 30% 15%)",
+        bkg: "hsl(var(--color-bkg) / <alpha-value>)",
+        content: "hsl(var(--color-content) / <alpha-value>)",
       },
+      backgroundImage: "var(--bkg-gradient)",
       animation: {
         "spin-slower": "spin 35s ease infinite",
         "spin-slow": "spin 25s ease-in-out infinite reverse",

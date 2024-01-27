@@ -25,13 +25,13 @@ import SocialNav from "./SocialNav.astro";
         {datos.nombre}
       </h2>
       <h3
-        class="flex flex-wrap gap-2 items-center ltext-lg lg:text-xl font-medium"
+        class="text-white/85 flex flex-wrap gap-2 items-center ltext-lg lg:text-xl font-medium"
       >
         {datos.puesto}
       </h3>
       <Badge
         class={datos.disponibilidad.disponible
-          ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
+          ? "bg-green-100 text-green-800"
           : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300"}
       >
         {datos.disponibilidad.texto}

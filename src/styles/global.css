@@ -1,15 +1,20 @@
 :root {
-  color-scheme: light dark;
-  --accent: 136 19 55;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%
+  color-scheme: light;
+  --color-accent: 342, 75%, 30%;
+  /*hsl(342, 75%, 30%) */
+  --color-accent-2: 136, 19, 55;
+  /*hsl(342, 75%, 40%)*/
+  --color-bkg: 350, 10%, 10%;
+  /*hsl(350, 10%, 10%)*/
+  --color-content: 0, 0%, 100%;
+  /*hsl(0, 0%, 100%)*/
+  --bkg-gradient: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    hsla(352, 33%, 51%, 0.3),
+    hsla(341, 94%, 6%, 0.049)
   );
 }
+
 *,
 *::after,
 *::before {
@@ -18,11 +23,7 @@
 }
 html {
   font-family: "Onest Variable", system-ui, sans-serif;
-  background-image: radial-gradient(
-    ellipse 80% 80% at 50% -20%,
-    rgba(171, 90, 101, 0.3),
-    rgba(30, 1, 10, 0.049)
-  );
+  /* background-image: var(--bkg-gradient); */
 }
 
 body {

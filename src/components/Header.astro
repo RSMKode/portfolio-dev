@@ -1,5 +1,6 @@
 ---
 import { datos } from "../data/data.json";
+import NavLink from "./NavLink.astro";
 ---
 
 <header
@@ -10,12 +11,12 @@ import { datos } from "../data/data.json";
   >
     <h1 class="w-1/2 text-2xl lg:text-4xl font-bold">{datos.nick}</h1>
     <nav
-      class="w-full h-full flex items-center justify-between max-w-5xl xl:max-w-7xl"
+      class="w-full h-full flex justify-end items-center gap-1 max-w-5xl xl:max-w-7xl"
     >
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contacto</a>
+      <NavLink nombre="Home" link="/" icono="home" />
+      <NavLink nombre="Projects" link="/" icono="projects" />
+      <NavLink nombre="About" link="/" icono="home" />
+      <NavLink nombre="Contacto" link="/" icono="home" />
     </nav>
   </div>
 </header>
