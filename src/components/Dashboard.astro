@@ -1,5 +1,5 @@
 ---
-import datos from "../data/datos.json";
+import { datos } from "../data/data.json";
 
 import Badge from "./Badge.astro";
 import Box from "./Box.astro";
@@ -40,7 +40,9 @@ import SocialNav from "./SocialNav.astro";
     </article>
   </Box>
 
-  <Box class={"row-span-1 col-span-3 dark: xl:col-span-2 gap-4 bg-rose-900"}>
+  <Box
+    class={"row-span-1 col-span-3 dark: xl:col-span-2 justify-evenly bg-rose-900"}
+  >
     <h2 class="text-2xl font-bold">Sobre mi</h2>
     <p class="w-full opacity-80">
       {datos.about}
@@ -48,7 +50,7 @@ import SocialNav from "./SocialNav.astro";
   </Box>
 
   <Box
-    class="row-span-1 col-span-3 xl:col-span-1 flex items-center justify-center"
+    class="row-span-1 col-span-3 xl:col-span-2 flex items-center justify-center"
   >
     <img
       class="absolute w-full h-full object-cover"
@@ -57,7 +59,7 @@ import SocialNav from "./SocialNav.astro";
       title="Location"
     />
     <div
-      class="animated w-24 h-24 bg-[#c24444] absolute z-[1] rounded-full bg-opacity-30 border-2 border-white"
+      class="animated w-24 h-24 bg-rose-900 absolute z-[1] rounded-full bg-opacity-30 border-2 border-white"
     >
     </div>
     <footer

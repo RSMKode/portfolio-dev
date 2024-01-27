@@ -1,8 +1,11 @@
 ---
 import "@fontsource-variable/onest";
+import "../styles/global.css";
+
+import { datos, metaData } from "../data/data.json";
+console.log(metaData);
 
 import Header from "../components/Header.astro";
-import "../styles/global.css";
 
 interface Props {
   title: string;
@@ -17,9 +20,29 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+    <!-- Primary Meta Tags -->
     <title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+    <meta name="title" content={metaData.webTitle} />
+    <meta name="description" content={metaData.description} />
+    <meta name="keywords" content={metaData.keywords.join(", ")} />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={metaData.webURL} />
+    <meta property="og:title" content={metaData.webTitle} />
+    <meta property="og:site_name" content={metaData.webTitle} />
+    <meta property="og:description" content={metaData.description} />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/erickvpomie/dev-portfolio/main/public/og-image.webp"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={metaData.webURL} />
+    <meta property="twitter:title" content={metaData.webTitle} />
+    <meta property="twitter:description" content={metaData.description} />
+    <meta property="twitter:image" content={metaData.webImage} />
   </head>
   <body>
     <Header />

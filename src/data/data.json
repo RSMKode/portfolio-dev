@@ -1,0 +1,64 @@
+{
+    "datos": {
+        "nombre": "Roger Sancho",
+        "nick": "RSMKode",
+        "puesto": "Desarrollador Web",
+        "disponibilidad": {
+            "disponible": true,
+            "texto": "Disponible para trabajar"
+        },
+        "about": "Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
+        "from": {
+            "text": "Valencia, ES 🇪🇸",
+            "src": "/assets/valencia-maps.png"
+        },
+        "imagenes": {
+            "logo": {
+                "src": "https://avatars.githubusercontent.com/u/116068243?v=4",
+                "alt": "Logo RSMKode"
+            },
+            "foto": {
+                "src": "/assets/foto-personal.jpg",
+                "alt": "Imagen personal"
+            }
+        },
+        "links": {
+            "linkedin": {
+                "nombre": "LinkedIn",
+                "link": "https://linkedin.com/in/roger-sancho",
+                "icono": "/assets/icons/linkedin.svg"
+            },
+            "github": {
+                "nombre": "GitHub",
+                "link": "https://github.com/RSMKode",
+                "icono": "/assets/icons/github.svg"
+            },
+            "email": {
+                "nombre": "rogersanchom@gmail.com",
+                "link": "mailto:rogersanchom@gmail.com",
+                "icono": "/assets/icons/email.svg"
+            }
+        }
+    },
+    "metaData": {
+        "webTitle": "Roger Sancho | Portfolio",
+        "webURL": "https:/rsmkode.vercel.app",
+        "description": "Bienvenido a mi portfolio. Soy Roger Sancho, Enfermero en transición profesional a Desarrollador de Aplicaciones Web",
+        "keywords": [
+            "Roger",
+            "Roger Sancho",
+            "Software Developer",
+            "Web Developer",
+            "Front-end Developer",
+            "Astro",
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "Vite",
+            "TailwindCSS",
+            "UX/UI"
+        ],
+        "webImage": "asd"
+    }
+}
