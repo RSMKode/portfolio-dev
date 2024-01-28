@@ -1,0 +1,33 @@
+---
+import { datos } from "../data/data.json";
+
+import { Icon } from "astro-icon/components";
+import Box from "./Box.astro";
+---
+
+<footer class="w-full h-[12rem] flex px-6 md:px-12 max-w-5xl xl:max-w-7xl">
+  <Box class="w-full flex-row justify-between bg-emerald-100 dark:bg-rose-900">
+    <div class="flex flex-col justify-center opacity-50">
+      <p>© 2024 {datos.nombre}.</p>
+      <p class="items-center gap-2 hidden sm:flex">
+        Powered by Astro <Icon name="tabler:rocket" />
+        and React <Icon name="tabler:brand-react" />
+      </p>
+    </div>
+    <div class="flex flex-col justify-center items-end">
+      <p class="opacity-50 hidden md:flex">
+        {datos.footer.updated}
+      </p><div class="flex items-center gap-2">
+        <a
+          class="flex items-center gap-1 font-medium"
+          href={datos.footer.linkRepo.link}
+          title={datos.footer.linkRepo.nombre}
+          ><span class="hidden sm:flex opacity-50"
+            >{datos.footer.linkRepo.nombre}</span
+          >
+          <Icon name="mdi:github" /></a
+        >
+      </div>
+    </div>
+  </Box>
+</footer>

@@ -7,7 +7,7 @@
             "disponible": true,
             "texto": "Disponible para trabajar"
         },
-        "about": "Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
+        "about": "Enfermero en transición profesional a Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
         "from": {
             "text": "Valencia, ES 🇪🇸",
             "src": "/assets/valencia-maps.png"
@@ -38,12 +38,20 @@
                 "link": "mailto:rogersanchom@gmail.com",
                 "icono": "mdi:at"
             }
+        },
+        "footer": {
+            "linkRepo": {
+                "nombre": "Repositorio de este portfolio",
+                "link": "https://github.com/RSMKode/portfolio-dev",
+                "icono": "mdi:github"
+            },
+            "updated": "Última actualización: 28 de Enero de 2024"
         }
     },
     "metaData": {
         "webTitle": "Roger Sancho | Portfolio",
         "webURL": "https:/rsmkode.vercel.app",
-        "description": "Bienvenido a mi portfolio. Soy Roger Sancho, Enfermero en transición profesional a Desarrollador de Aplicaciones Web",
+        "description": "Bienvenido a mi portfolio. Soy Enfermero en transición profesional a Desarrollador de Aplicaciones Web",
         "keywords": [
             "Roger",
             "Roger Sancho",

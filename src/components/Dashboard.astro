@@ -6,7 +6,7 @@ import Box from "./Box.astro";
 import SocialNav from "./SocialNav.astro";
 ---
 
-<section class="w-full grid auto-rows-[11rem] grid-cols-6 gap-4">
+<section class="w-full grid auto-rows-[12rem] grid-cols-6 gap-4">
   <Box class={"row-span-2 col-span-6 xl:col-span-4"}>
     <div
       class="absolute bg-gradient-to-t from-neutral-900 to-transparent inset-0 z-[1]"
@@ -43,10 +43,10 @@ import SocialNav from "./SocialNav.astro";
   </Box>
 
   <Box
-    class={"row-span-1 col-span-3 dark: xl:col-span-2 justify-evenly text-black dark:text-white bg-emerald-100 dark:bg-rose-900"}
+    class="flex-col row-span-1 col-span-3 xl:col-span-2 justify-evenly text-black dark:text-white bg-emerald-100 dark:bg-rose-900"
   >
-    <h2 class="text-2xl font-bold">Sobre mi</h2>
-    <p class="w-full opacity-80">
+    <h2 class="text-2xl font-bold">Sobre mí</h2>
+    <p class="w-full opacity-80 text-sm md:text-base">
       {datos.about}
     </p>
   </Box>

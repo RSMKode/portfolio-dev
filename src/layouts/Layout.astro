@@ -6,6 +6,7 @@ import { datos, metaData } from "../data/data.json";
 console.log(metaData);
 
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -49,5 +50,6 @@ const { title } = Astro.props;
   >
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>
