@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MainHeader from "../components/Dashboard.astro";
-import MainHeaderMidu from "../components/MainHeaderMidu.astro";
-import { datos } from "../data/data.json";
+import Dashboard from "../components/Dashboard.astro";
+import { datos, metaData } from "../data/data.json";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={metaData.webTitle}>
   <main
     class="flex flex-col gap-10 pb-12 px-6 md:px-12 items-center max-w-5xl xl:max-w-7xl"
   >
-    <MainHeader />
+    <Dashboard />
+    <Dashboard />
+    <Dashboard />
+    <Dashboard />
   </main>
 </Layout>

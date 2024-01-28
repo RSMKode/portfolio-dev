@@ -14,6 +14,8 @@ export default {
       },
       backgroundImage: "var(--bkg-gradient)",
       animation: {
+        "spin-faster": "spin 0.5s ease infinite",
+        "spin-fast": "spin 0.75s ease infinite",
         "spin-slower": "spin 35s ease infinite",
         "spin-slow": "spin 25s ease-in-out infinite reverse",
       },
