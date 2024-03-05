@@ -1,0 +1,20 @@
+---
+import { datos } from "@/data/data.json";
+
+import Project from "@/components/Project.astro";
+---
+
+<header id="projects" class="w-full flex flex-col gap-2 text-center">
+  <h1 class="text-3xl font-semibold" style="opacity: 1; transform: none;">
+    Proyectos
+  </h1>
+  <p class="opacity-70" style="opacity: 1; transform: none;">
+    Algunos de los proyectos en los que he trabajado:
+  </p>
+</header>
+<section
+  class="w-full grid auto-rows-[10rem] lg:auto-rows-[8rem] grid-cols-8 gap-4"
+>
+  <Project {...datos.projects[0]} />
+  <!-- {datos.projects.map((project) => (<Project {...project}/>)} -->
+</section>

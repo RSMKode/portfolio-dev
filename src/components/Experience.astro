@@ -1,0 +1,21 @@
+---
+import { datos } from "@/data/data.json";
+import ExperienceItem from "./ExperienceItem.astro";
+---
+
+<header id="experience" class="w-full flex flex-col gap-2 text-center">
+  <h1 class="text-3xl font-semibold" style="opacity: 1; transform: none;">
+    Experiencia
+  </h1>
+</header>
+<section class="w-full px-1">
+  <ol class="relative border-s border-black/40 dark:border-white/50">
+    {
+      datos.experience.map((experience) => (
+        <li class="mb-10 ms-4">
+          <ExperienceItem {...experience} />
+        </li>
+      ))
+    }
+  </ol>
+</section>

@@ -1,14 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Dashboard from "../components/Dashboard.astro";
+import Hero from "../components/Hero.astro";
 import { datos, metaData } from "../data/data.json";
+import Projects from "../components/Projects.astro";
+import Experience from "@/components/Experience.astro";
 ---
 
 <Layout title={metaData.webTitle}>
   <main
     class="flex flex-col gap-10 pb-12 px-6 md:px-12 items-center max-w-5xl xl:max-w-7xl"
   >
-    <Dashboard />
-    <Dashboard />
+    <Hero />
+    <Experience />
+    <Projects />
   </main>
 </Layout>

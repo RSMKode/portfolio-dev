@@ -1,5 +1,6 @@
 :root {
   color-scheme: light;
+  --color-primary: 203, 139, 198;
   --color-accent: 342, 75%, 30%;
   /*hsl(342, 75%, 30%) */
   --color-accent-2: 136, 19, 55;

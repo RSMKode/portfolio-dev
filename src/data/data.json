@@ -10,7 +10,7 @@
         "about": "Enfermero en transición profesional a Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
         "from": {
             "text": "Valencia, ES 🇪🇸",
-            "src": "/assets/valencia-maps.png"
+            "src": "/assets/valencia-maps.webp"
         },
         "imagenes": {
             "logo": {
@@ -18,11 +18,11 @@
                 "alt": "Logo RSMKode"
             },
             "foto": {
-                "src": "/assets/foto-personal.jpg",
+                "src": "/assets/foto-personal.webp",
                 "alt": "Imagen personal"
             }
         },
-        "links": {
+        "socialLinks": {
             "linkedin": {
                 "nombre": "LinkedIn",
                 "link": "https://linkedin.com/in/roger-sancho",
@@ -39,6 +39,63 @@
                 "icono": "mdi:at"
             }
         },
+        "experience": [
+            {
+                "date": "February 2022",
+                "title": "Application UI code in Tailwind CSS",
+                "description": "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+                "link": "#"
+            },
+            {
+                "date": "March 2022",
+                "title": "Marketing UI design in Figma",
+                "description": "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
+            },
+            {
+                "date": "April 2022",
+                "title": "E-Commerce UI code in Tailwind CSS",
+                "description": "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
+            }
+        ],
+        "projects": [
+            {
+                "name": "Fandom Comic Scraper",
+                "type": "Proyecto personal",
+                "description": "Scraper de la web de Fandom para obtener información de comics de Marvel, DC y otras grandes editoriales de cómic estadounidense.",
+                "tecnologies": [
+                    "Astro",
+                    "TypeScript",
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ],
+                "links": {
+                    "site": "https://fandom-comic-scraper.vercel.app",
+                    "repo": "https://github.com/RSMKode/fandom-comic-scraper"
+                },
+                "image": {
+                    "src": "/assets/projects/fandom-comic-scraper.webp"
+                }
+            },
+            {
+                "name": "Portfolio",
+                "type": "Proyecto personal",
+                "description": "Este portfolio es un proyecto personal que nace de la necesidad de tener un espacio donde compartir mis conocimientos y experiencias en el mundo del desarrollo web.",
+                "tecnologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "Vite",
+                    "TailwindCSS"
+                ],
+                "links": {
+                    "site": "https://astro.rsmkode.vercel.app",
+                    "repo": "https://astro.rsmkode.vercel.app"
+                },
+                "image": {
+                    "src": "/assets/portfolio.webp"
+                }
+            }
+        ],
         "footer": {
             "linkRepo": {
                 "nombre": "Repositorio de este portfolio",

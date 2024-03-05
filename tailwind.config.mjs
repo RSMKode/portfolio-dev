@@ -5,12 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: {
-          1: "hsl(var(--color-accent-1) / <alpha-value>)",
-          2: "hsl(var(--color-accent-2) / <alpha-value>)",
+        primary: {
+          l: "rgb(209 250 229 / <alpha-value>)",
+          d: "rgb(136 19 55 / <alpha-value>)",
         },
-        bkg: "hsl(var(--color-bkg) / <alpha-value>)",
-        content: "hsl(var(--color-content) / <alpha-value>)",
+        // accent: {
+        //   1: "hsl(var(--color-accent-1) / <alpha-value>)",
+        //   2: "hsl(var(--color-accent-2) / <alpha-value>)",
+        // },
+        // bkg: "hsl(var(--color-bkg) / <alpha-value>)",
+        // content: "hsl(var(--color-content) / <alpha-value>)",
       },
       backgroundImage: "var(--bkg-gradient)",
       animation: {

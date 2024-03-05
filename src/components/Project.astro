@@ -1,0 +1,58 @@
+---
+import { Icon } from "astro-icon/components";
+import Box from "./Box.astro";
+
+interface Props {
+  name: string;
+  type: string;
+  description: string;
+  tecnologies: Array<string>;
+  links: {
+    site?: string;
+    repo?: string;
+  };
+  image: {
+    src: string;
+  };
+}
+
+const { name, type, description, tecnologies, links, image } = Astro.props;
+---
+
+<Box
+  class="flex-col gap-2 row-span-3 col-span-8 xl:col-span-4 text-black dark:text-white bg-primary-l dark:bg-primary-d"
+>
+  <header class="flex place-content-between">
+    <div class="flex flex-col">
+      <span class="font-semibold uppercase opacity-50">{type}</span>
+      <h3 class="dark:text-white text-2xl font-bold">{name}</h3>
+    </div>
+    <div class="flex gap-2">
+      {
+        links &&
+          Object.keys(links).map((link) => (
+            <a
+              class="size-[3rem] flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-40 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d transition-colors duration-150 z-[1]"
+              href={links.repo}
+              target="_blank"
+              rel="noreferrer"
+              title={name + " " + link}
+            >
+              <Icon name="tabler:arrow-forward" />
+            </a>
+          ))
+      }
+    </div>
+  </header>
+  <p class="text-base opacity-70 max-w-[90%]">{description}</p>
+  <div class="flex items-center gap-2 opacity-90 font-medium">
+    {tecnologies.map((tecnology) => <span class="text-sm">{tecnology}</span>)}
+  </div>
+
+  <img
+    class="w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12 lg:top-48 false mt-6 translate-x-10 hover:scale-105"
+    src={image.src}
+    alt={name}
+    title="Project screenshot"
+  />
+</Box>
