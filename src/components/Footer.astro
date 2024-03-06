@@ -7,29 +7,37 @@ import Box from "./Box.astro";
 
 <footer class="w-full flex px-6 pb-6 md:px-12 max-w-5xl xl:max-w-7xl">
   <Box
-    class="w-full h-[12rem] flex-row justify-between bg-primary-l dark:bg-primary-d"
+    class="w-full h-[12rem] flex-col sm:flex-row justify-evenly sm:justify-between bg-primary-l dark:bg-primary-d"
   >
     <div class="flex flex-col justify-center opacity-50">
       <p>© 2024 {datos.nombre}.</p>
-      <p class="items-center gap-2 hidden sm:flex">
-        Powered by Astro <Icon name="tabler:rocket" />
-        and React <Icon name="tabler:brand-react" />
+      <p class="gap-x-1 flex sm:items-center">
+        <span>Powered by</span>
+        <span class="flex gap-1 items-center">
+          Astro
+          <Icon name="tabler:rocket" />
+        </span>
+
+        <span class="flex gap-1 items-center">
+          React
+          <Icon name="tabler:brand-react" />
+        </span>
       </p>
     </div>
-    <div class="flex flex-col justify-center items-end">
-      <p class="opacity-50 hidden md:flex">
-        {datos.footer.updated}
-      </p><div class="flex items-center gap-2">
+    <div class="flex flex-col justify-center sm:items-end">
+      <div class="flex items-center gap-2">
         <a
           class="flex items-center gap-1 font-medium"
           href={datos.footer.linkRepo.link}
           title={datos.footer.linkRepo.nombre}
-          ><span class="hidden sm:flex opacity-50"
-            >{datos.footer.linkRepo.nombre}</span
-          >
-          <Icon name="mdi:github" /></a
+        >
+          <span class="opacity-50">{datos.footer.linkRepo.nombre}</span>
+          <Icon name="mdi:github" class="size-6" /></a
         >
       </div>
+      <p class="opacity-50">
+        {datos.footer.updated}
+      </p>
     </div>
   </Box>
 </footer>
