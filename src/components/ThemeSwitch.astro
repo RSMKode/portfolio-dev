@@ -41,6 +41,16 @@ import { Icon } from "astro-icon/components";
 
     const isDark = element.classList.contains("dark");
     localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    const button = document.querySelector("#themeToggle");
+
+    button.animate(
+      [{ transform: "rotate(0deg)" }, { transform: "rotate(360deg)" }],
+      {
+        duration: 350,
+        iterations: 1,
+      }
+    );
   };
 
   document

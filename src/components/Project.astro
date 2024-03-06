@@ -2,19 +2,19 @@
 import { Icon } from "astro-icon/components";
 import Box from "./Box.astro";
 
-interface Props {
-  name: string;
-  type: string;
-  description: string;
-  tecnologies: Array<string>;
-  links: {
-    site?: string;
-    repo?: string;
-  };
-  image: {
-    src: string;
-  };
-}
+// interface Props {
+//   name: string;
+//   type: string;
+//   description: string;
+//   tecnologies: Array<string>;
+//   links: {
+//     site?: string;
+//     repo?: string;
+//   };
+//   image: {
+//     src: string;
+//   };
+// }
 
 const { name, type, description, tecnologies, links, image } = Astro.props;
 ---
@@ -58,11 +58,15 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
   </header>
   <p class="text-base opacity-70 max-w-[90%]">{description}</p>
   <div class="flex items-center gap-2 opacity-90 font-medium">
-    {tecnologies.map((tecnology) => <span class="text-sm">{tecnology}</span>)}
+    {
+      tecnologies.map((tecnology: string) => (
+        <span class="text-sm">{tecnology}</span>
+      ))
+    }
   </div>
 
   <img
-    class="w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12 lg:top-48 false mt-6 translate-x-10 hover:scale-105"
+    class="w-[100rem] top-48 rounded-2xl object-cover transition-all duration-300 lg:-right-12 mt-6 hover:scale-105"
     src={image.src}
     alt={name}
     title="Project screenshot"
