@@ -27,20 +27,32 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
       <span class="font-semibold uppercase opacity-50">{type}</span>
       <h3 class="dark:text-white text-2xl font-bold">{name}</h3>
     </div>
-    <div class="flex gap-2">
+    <div class="flex gap-3">
       {
-        links &&
-          Object.keys(links).map((link) => (
-            <a
-              class="size-[3rem] flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-40 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d transition-colors duration-150 z-[1]"
-              href={links.repo}
-              target="_blank"
-              rel="noreferrer"
-              title={name + " " + link}
-            >
-              <Icon name="tabler:arrow-forward" />
-            </a>
-          ))
+        links.site && (
+          <a
+            class="size-fit flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200"
+            href={links.site}
+            target="_blank"
+            rel="noreferrer"
+            title={name}
+          >
+            <Icon name="tabler:app-window" class="size-6" />
+          </a>
+        )
+      }
+      {
+        links.site && (
+          <a
+            class="size-fit flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200"
+            href={links.repo}
+            target="_blank"
+            rel="noreferrer"
+            title={"Repositorio de " + name}
+          >
+            <Icon name="mdi:github" class="size-6" />
+          </a>
+        )
       }
     </div>
   </header>

@@ -24,20 +24,20 @@ import Box from "./Box.astro";
         </span>
       </p>
     </div>
-    <div class="flex flex-col justify-center sm:items-end">
-      <div class="flex items-center gap-2">
-        <a
-          class="flex items-center gap-1 font-medium"
-          href={datos.footer.linkRepo.link}
-          title={datos.footer.linkRepo.nombre}
-        >
-          <span class="opacity-50">{datos.footer.linkRepo.nombre}</span>
-          <Icon name="mdi:github" class="size-6" /></a
-        >
-      </div>
+    <div class="flex flex-col justify-center sm:items-center">
       <p class="opacity-50">
         {datos.footer.updated}
       </p>
+      <a
+        class="size-fit flex gap-1 items-center px-2 py-1 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-110 transition-all duration-200"
+        href={datos.footer.linkRepo.link}
+        target="_blank"
+        rel="noreferrer"
+        title={datos.footer.linkRepo.nombre}
+      >
+        <span>{datos.footer.linkRepo.nombre}</span>
+        <Icon name="tabler:app-window" class="size-6" />
+      </a>
     </div>
   </Box>
 </footer>
