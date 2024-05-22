@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon/components";
-import Box from "./Box.astro";
+import { Icon } from 'astro-icon/components';
+import Box from './Box.astro';
 
 // interface Props {
 //   name: string;
@@ -20,8 +20,7 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
 ---
 
 <Box
-  class="flex-col gap-2 row-span-4 col-span-8 xl:col-span-4 text-black dark:text-white bg-primary-l dark:bg-primary-d"
->
+  class="flex-col gap-2 row-span-4 col-span-8 xl:col-span-4 text-black dark:text-white bg-primary-l dark:bg-primary-d group hover:-translate-y-2 hover:shadow-2xl transition">
   <header class="flex place-content-between items-center">
     <div class="flex flex-col">
       <span class="font-semibold uppercase opacity-50">{type}</span>
@@ -35,8 +34,7 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
             href={links.site}
             target="_blank"
             rel="noreferrer"
-            title={name}
-          >
+            title={name}>
             <Icon name="tabler:app-window" class="size-6" />
           </a>
         )
@@ -48,8 +46,7 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
             href={links.repo}
             target="_blank"
             rel="noreferrer"
-            title={"Repositorio de " + name}
-          >
+            title={'Repositorio de ' + name}>
             <Icon name="mdi:github" class="size-6 " />
           </a>
         )
@@ -65,10 +62,14 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
     }
   </div>
 
-  <img
-    class="w-[100rem] top-48 rounded-2xl object-cover transition-all duration-300 lg:-right-12 mt-6 hover:scale-105"
-    src={image.src}
-    alt={name}
-    title="Project screenshot"
-  />
+  {
+    image && (
+      <img
+        class="w-[100rem] top-48 rounded-2xl object-cover transition-all duration-300 lg:-right-12 mt-6 hover:scale-105 hover:-translate-y-16 hover:shadow-lg"
+        src={image.src}
+        alt={name}
+        title="Project screenshot"
+      />
+    )
+  }
 </Box>
