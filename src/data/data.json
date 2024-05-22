@@ -2,10 +2,10 @@
     "datos": {
         "nombre": "Roger Sancho",
         "nick": "RSMKode",
-        "puesto": "Desarrollador Web",
+        "puesto": "Desarrollador Web Full Stack",
         "disponibilidad": {
             "disponible": true,
-            "texto": "Disponible para trabajar"
+            "texto": "Actualmente trabajando en ExpertOne"
         },
         "about": "Enfermero en transición profesional a Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
         "from": {
@@ -41,10 +41,9 @@
         },
         "experience": [
             {
-                "date": "February 2022",
-                "title": "Application UI code in Tailwind CSS",
-                "description": "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-                "link": "#"
+                "date": "April 2022",
+                "title": "E-Commerce UI code in Tailwind CSS",
+                "description": "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
             },
             {
                 "date": "March 2022",
@@ -52,8 +51,14 @@
                 "description": "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project."
             },
             {
-                "date": "April 2022",
-                "title": "E-Commerce UI code in Tailwind CSS",
+                "date": "February 2022",
+                "title": "Application UI code in Tailwind CSS",
+                "description": "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+                "link": "#"
+            },
+            {
+                "date": "Jan 2024",
+                "title": "Prueba",
                 "description": "Get started with dozens of web components and interactive elements built on top of Tailwind CSS."
             }
         ],
@@ -78,18 +83,38 @@
                 }
             },
             {
+                "name": "IES Abastos | Erasmus+",
+                "type": "Proyecto personal",
+                "description": "Proyecto final de ciclo de grado superior de Desarrollo de Aplicaciones Web. Web para el IES Abastos de Valencia para la gestión de los programas Erasmus+.",
+                "tecnologies": [
+                    "Astro",
+                    "TypeScript",
+                    "Vite",
+                    "TailwindCSS",
+                    "Decap CMS",
+                    "Swiper JS"
+                ],
+                "links": {
+                    "site": "https://ies-abastos-erasmus.netlify.app",
+                    "repo": "https://github.com/RSMKode/ies-abastos-erasmus"
+                },
+                "image": {
+                    "src": "/assets/projects/ies-abastos-erasmus.webp"
+                }
+            },
+            {
                 "name": "Portfolio",
                 "type": "Proyecto personal",
                 "description": "Este portfolio es un proyecto personal que nace de la necesidad de tener un espacio donde compartir mis conocimientos y experiencias en el mundo del desarrollo web.",
                 "tecnologies": [
-                    "Next.js",
+                    "Astro",
                     "TypeScript",
                     "Vite",
                     "TailwindCSS"
                 ],
                 "links": {
-                    "site": "https://astro.rsmkode.vercel.app",
-                    "repo": "https://astro.rsmkode.vercel.app"
+                    "site": "https://rsmkode.vercel.app",
+                    "repo": "https://github.com/RSMKode/rsmkode-portfolio"
                 },
                 "image": {
                     "src": "/assets/portfolio.webp"

@@ -20,18 +20,18 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
 ---
 
 <Box
-  class="flex-col gap-2 row-span-3 col-span-8 xl:col-span-4 text-black dark:text-white bg-primary-l dark:bg-primary-d"
+  class="flex-col gap-2 row-span-4 col-span-8 xl:col-span-4 text-black dark:text-white bg-primary-l dark:bg-primary-d"
 >
-  <header class="flex place-content-between">
+  <header class="flex place-content-between items-center">
     <div class="flex flex-col">
       <span class="font-semibold uppercase opacity-50">{type}</span>
       <h3 class="dark:text-white text-2xl font-bold">{name}</h3>
     </div>
-    <div class="flex gap-3">
+    <div class="flex gap-3 flex-col sm:flex-row">
       {
         links.site && (
           <a
-            class="size-fit flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200"
+            class="size-fit flex place-content-center items-center p-1 sm:p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200 shrink-0"
             href={links.site}
             target="_blank"
             rel="noreferrer"
@@ -44,13 +44,13 @@ const { name, type, description, tecnologies, links, image } = Astro.props;
       {
         links.site && (
           <a
-            class="size-fit flex place-content-center items-center p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200"
+            class="size-fit flex place-content-center items-center p-1 sm:p-2 border-2 border-black dark:border-white opacity-50 rounded-full cursor-pointer dark:hover:bg-white dark:hover:text-primary-d hover:scale-125 transition-all duration-200 shrink-0"
             href={links.repo}
             target="_blank"
             rel="noreferrer"
             title={"Repositorio de " + name}
           >
-            <Icon name="mdi:github" class="size-6" />
+            <Icon name="mdi:github" class="size-6 " />
           </a>
         )
       }

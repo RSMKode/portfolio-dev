@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import colors from "tailwindcss/colors";
+
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   darkMode: "class",
@@ -6,8 +9,9 @@ export default {
     extend: {
       colors: {
         primary: {
-          l: "rgb(209 250 229 / <alpha-value>)",
-          d: "rgb(136 19 55 / <alpha-value>)",
+          // l: "rgb(var(--color-primary) / <alpha-value>)",
+          l: colors.emerald[400],
+          d: colors.rose[900],
         },
         // accent: {
         //   1: "hsl(var(--color-accent-1) / <alpha-value>)",

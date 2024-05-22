@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --color-primary: 203, 139, 198;
+  --color-primary: 203 139 198;
   --color-accent: 342, 75%, 30%;
   /*hsl(342, 75%, 30%) */
   --color-accent-2: 136, 19, 55;
@@ -15,6 +15,11 @@
     hsla(341, 94%, 6%, 0.049)
   );
 }
+/* :root[class="dark"] {
+  l: "rgb(209 250 229 / <alpha-value>)",
+          // l: "rgb(var(--color-primary) / <alpha-value>)",
+          d: "rgb(136 19 55 / <alpha-value>)",
+} */
 
 *,
 *::after,
