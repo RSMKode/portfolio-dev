@@ -7,7 +7,7 @@
             "disponible": true,
             "texto": "Actualmente trabajando en ExpertOne"
         },
-        "about": "Enfermero en transición profesional a Desarrollador Web. Apasionado por el frontend y el diseño UX/UI.",
+        "about": "Apasionado por el FrontEnd y el diseño UX/UI. Experiencia en Next.js, TS, Docker, TailwindCSS. Siempre aprendiendo y mejorando. Enfermero en una versión legacy de mi vida. 😁",
         "from": {
             "text": "Valencia, ES 🇪🇸",
             "src": "/assets/valencia-maps.webp"
@@ -43,7 +43,7 @@
             {
                 "date": "Marzo 2024 - Actualidad",
                 "title": "Desarrollo Web Full Stack en ExpertOne, Valencia",
-                "description": "Desarrollo de aplicaciones web y móviles. Trabajo en equipo con tecnologías como React, Angular, Ionic, TypeScript, TailwindCSS, Laravel, SQL, etc.",
+                "description": "Desarrollo de aplicaciones web. Trabajo con equipos multidisciplinairos. Uso de tecnologías como NextJS, React, TypeScript TailwindCSS, Docker. Experiencia con otras tecnologías como Angular, Ionic, Laravel, PHP, SQL, etc.",
                 "link": "https://expertone.es"
             },
             {
@@ -68,6 +68,40 @@
             }
         ],
         "projects": [
+            {
+                "name": "EXO Log-One",
+                "type": "Proyecto profesional",
+                "description": "Web para la gestión de almacén y automatización de procesos en SAP. Incluye gestión de stock, recepción de materiales, expedición, picking y packing, solicitudes de traslado, recuentos de inventario, etc. Reenderizado en el servidor con Next.js y TypeScirpt. Clean Architecture. Despliegue en Docker con Nginx. Diseño responsive con TailwindCSS. Selector de temas con CSS variables.",
+                "tecnologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "Docker",
+                    "Nginx",
+                    "HTML",
+                    "CSS",
+                    "TailwindCSS"
+                ],
+                "image": {
+                    "src": "/assets/projects/work/expert-one/exo-log-one.webp"
+                }
+            },
+            {
+                "name": "EXO-Gira",
+                "type": "Proyecto profesional",
+                "description": "Web para la gestión interna de desarrollos de la empresa ExpertOne. Incluye gestión de proyectos, tareas, empleados, etc. Reenderizado en el servidor con Next.js y TypeScirpt. Clean Architecture. Despliegue en Docker con Nginx. Diseño responsive con TailwindCSS. Selector de temas con CSS variables.",
+                "tecnologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "Docker",
+                    "Nginx",
+                    "HTML",
+                    "CSS",
+                    "TailwindCSS"
+                ],
+                "image": {
+                    "src": "/assets/projects/work/expert-one/exo-gira.webp"
+                }
+            },
             {
                 "name": "Fandom Comic Scraper",
                 "type": "Proyecto personal",
@@ -120,9 +154,6 @@
                 "links": {
                     "site": "https://rsmkode.vercel.app",
                     "repo": "https://github.com/RSMKode/rsmkode-portfolio"
-                },
-                "image": {
-                    "src": "/assets/portfolio.webp"
                 }
             }
         ],
